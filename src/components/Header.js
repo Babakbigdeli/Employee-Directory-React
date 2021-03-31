@@ -1,16 +1,14 @@
-import React from 'react'; 
-import SearchBar from "./SearchBar";
+import React, { Component } from 'react';
 
-
-function Header(props) {
+class Header extends Component {
+    render() {
         return (
             <div className="header">
-                <h1>Employee Directory</h1>
+                <h1>Employee Management System</h1>
                 <h3>Search for the emoployee using the search bar</h3>
-                />
             </div>
         )
-
+    }
 }
-
 export default Header;
+
