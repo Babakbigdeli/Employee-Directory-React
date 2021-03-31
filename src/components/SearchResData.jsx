@@ -5,6 +5,12 @@ import SearchBar from "./SearchBar";
 
 class SearchResData extends Component {
 
+    //Initial state defined
+    state = {
+        employees: [{}],
+        filteredEmployees: [{}],
+        order: "descend",
+      };
 };
 
 export default SearchResData;
