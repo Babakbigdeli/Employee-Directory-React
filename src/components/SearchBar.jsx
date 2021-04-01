@@ -1,11 +1,18 @@
 import React from "react";
 
-function SearchBar() {
+
+
+// Methods and props passed in 
+function SearchBar({handleSearch}) {
 
     return (
         <div className="searchBar">
-         <h1>TESTING</h1>
-                </div>
+           <form>
+             <input type="search"
+               placeholder="Type name to search"
+               onChange={event => handleSearch(event)} />
+           </form>
+        </div>
             )
 
 }
