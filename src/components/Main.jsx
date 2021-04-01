@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import API from "../utils/API";
-import SearchResTable from "./SearchResTable";
 import SearchBar from "./SearchBar";
+import SearchResTable from "./SearchResTable";
 
-class SearchResData extends Component {
+
+class Main extends Component {
 
     //Initial state defined
     state = {
@@ -42,6 +43,17 @@ class SearchResData extends Component {
       this.setState({ filteredEmployees: sortedEmployees });
       };
 
+      render() {
+        return (
+          <>
+            <SearchBar handleSearch={this.handleSearch} />
+            <SearchResTable
+              employees={this.state.filteredEmployees}
+              handleSort={this.handleSort}
+            />
+          </>
+        );
+      }
 };
 
-export default SearchResData;
+export default Main;
