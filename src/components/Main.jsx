@@ -53,6 +53,18 @@ class Main extends Component {
         this.setState({ filteredEmployees: searchResult });
       };
 
+
+      //Mounting phase method added
+      componentDidMount() {
+        API.getUsers().then((res) => {
+          console.log(res);
+          this.setState({
+            employees: res.data.results,
+            filteredEmployees: res.data.results,
+          });
+        });
+      }
+
       render() {
         return (
           <>
