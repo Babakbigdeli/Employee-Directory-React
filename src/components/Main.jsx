@@ -43,6 +43,16 @@ class Main extends Component {
       this.setState({ filteredEmployees: sortedEmployees });
       };
 
+      //Method for handling search
+
+      handleSearch = (e) => {
+        const searchResult = this.state.employees.filter((emp) => {
+          let name = `${emp.name.first}${emp.name.last}`;
+          return name.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1;
+        });
+        this.setState({ filteredEmployees: searchResult });
+      };
+
       render() {
         return (
           <>
