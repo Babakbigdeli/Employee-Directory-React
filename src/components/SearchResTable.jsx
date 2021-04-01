@@ -10,6 +10,7 @@ function SearchResTable({ employees, handleSort }){
             <tr> 
               <th>Image</th>
               <th className="tableColumns"
+               npm  style={{ color: 'red' }}
                 onClick={() => {
                   handleSort("name");
                 }}

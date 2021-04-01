@@ -1,0 +1,10 @@
+.searchBar {
+  background-color: yellowgreen;
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 1cm;
+}
+
+#placeholder {
+  margin-top: 0.2cm;
+}
