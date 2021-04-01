@@ -56,8 +56,8 @@ class Main extends Component {
 
       //Mounting phase method added
       componentDidMount() {
-        API.getUsers().then((res) => {
-          console.log(res);
+        API.getRandomEmployees().then((res) => {
+          // console.log(res);
           this.setState({
             employees: res.data.results,
             filteredEmployees: res.data.results,
