@@ -65,6 +65,7 @@ class Main extends Component {
         });
       }
 
+      //Render method done and props made for passing to children
       render() {
         return (
           <>
